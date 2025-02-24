@@ -1,0 +1,39 @@
+services:
+  producer:
+      build: src/producer
+      container_name: producer
+      depends_on:
+        rabbitmq:
+          condition: service_healthy
+        consumer1:
+          condition: service_started
+        consumer2:
+          condition: service_started
+
+  consumer1:
+    build: src/consumer1
+    container_name: consumer1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  consumer2:
+    build: src/consumer2
+    container_name: consumer2
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+  
+  rabbitmq:
+    image: rabbitmq:3.13.7-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+        
