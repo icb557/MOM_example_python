@@ -44,8 +44,30 @@ Message-Oriented Middleware (MOM) es un tipo de arquitectura de software que fac
 ### **5. Sistemas de Transporte Público**
    - Aplicaciones como Google Maps o Moovit reciben datos de ubicación de autobuses y trenes a través de sistemas de mensajería en tiempo real. Esto permite actualizar los horarios y la disponibilidad de transporte sin que haya una conexión directa y continua entre todos los actores del sistema.
 
+## Referencias
+
+1. **Hohpe, G., & Woolf, B. (2003). *Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*.** Addison-Wesley.  
+   - Referencia clásica sobre patrones de integración con MOM y middleware en general.
+
+2. **IBM Redbooks: *Messaging and Queuing Using the MQI***  
+   - Documentación sobre IBM MQ: [IBM Redbooks](https://www.redbooks.ibm.com/).
+
+3. **Apache ActiveMQ Documentation**  
+   - Una de las implementaciones open-source más utilizadas: [ActiveMQ Docs](https://activemq.apache.org/components/classic/documentation/).
+
+4. **RabbitMQ Documentation**  
+   - Sistema de mensajería basado en MOM: [RabbitMQ Docs](https://www.rabbitmq.com/documentation.html).
+
+5. **Middleware Messaging Concepts (Red Hat Developer)**  
+   - Introducción a los conceptos de MOM: [Red Hat Developer](https://developers.redhat.com/articles/message-oriented-middleware).
+
+6. **AWS Simple Queue Service (SQS) – Ejemplo de MOM en la nube**  
+   - Implementación de MOM en la nube: [AWS SQS](https://aws.amazon.com/sqs/).
+
 ## Conclusión
 
 MOM es una arquitectura esencial para sistemas modernos que requieren comunicación eficiente, confiable y escalable. Su aplicación en múltiples industrias demuestra su flexibilidad y capacidad para mejorar la resiliencia de los sistemas distribuidos. Gracias a sus ventajas, MOM sigue siendo una opción clave para el desarrollo de aplicaciones empresariales y de alto tráfico.
+
+
 
 
